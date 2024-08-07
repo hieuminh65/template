@@ -1,0 +1,45 @@
+/* app/globals.css */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Curtain opening animation */
+@keyframes curtain-open-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes curtain-open-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.curtain-left {
+  animation: curtain-open-left 2s forwards;
+}
+
+.curtain-right {
+  animation: curtain-open-right 2s forwards;
+}
+
+/* Animation for sliding effect */
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-slide {
+  animation: slide 2s ease-in-out;
+}
